@@ -1,0 +1,21 @@
+{
+  "extends": "./node_modules/gts/tsconfig-google.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "lib",
+    "removeComments": false,
+    "sourceMap": false,
+    "allowJs": false,
+    "skipLibCheck": true,
+    "declaration": true,
+    "declarationMap": false,
+    "noEmit": false,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "lib": ["es2019", "dom"]
+  },
+  "exclude": ["node_modules", "**/*.js"],
+  "include": ["types/**/*.d.ts", "**/*.ts", "**/*.test.ts"]
+}
