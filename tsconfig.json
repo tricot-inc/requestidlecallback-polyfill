@@ -16,6 +16,6 @@
     "isolatedModules": true,
     "lib": ["es2019", "dom"]
   },
-  "exclude": ["node_modules", "**/*.js"],
-  "include": ["types/**/*.d.ts", "**/*.ts", "**/*.test.ts"]
+  "exclude": ["node_modules", "**/*.js", "**/*.test.ts"],
+  "include": ["types/**/*.d.ts", "**/*.ts"]
 }

@@ -45,3 +45,8 @@ export const cancelIdleCallback =
   function (id: RequestIdleCallbackHandle): void {
     return clearTimeout(id);
   };
+
+if (typeof window !== 'undefined') {
+  window.requestIdleCallback = requestIdleCallback;
+  window.cancelIdleCallback = cancelIdleCallback;
+}
